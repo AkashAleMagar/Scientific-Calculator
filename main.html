@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <!-- Scientific Functions -->
+            <button class="scientific" onclick="addToDisplay('sin(')">sin</button>
+            <button class="scientific" onclick="addToDisplay('cos(')">cos</button>
+            <button class="scientific" onclick="addToDisplay('tan(')">tan</button>
+            <button class="scientific" onclick="addToDisplay('asin(')">asin</button>
+            <button class="scientific" onclick="addToDisplay('acos(')">acos</button>
+            
+            <button class="scientific" onclick="addToDisplay('atan(')">atan</button>
+            <button class="scientific" onclick="addToDisplay('log(')">log</button>
+            <button class="scientific" onclick="addToDisplay('ln(')">ln</button>
+            <button class="scientific" onclick="addToDisplay('√(')">√</button>
+            <button class="scientific" onclick="addToDisplay('^')">x^y</button>
+            
+            <button class="scientific" onclick="addToDisplay('π')">π</button>
+            <button class="scientific" onclick="addToDisplay('e')">e</button>
+            <button class="scientific" onclick="addToDisplay('(')">(</button>
+            <button class="scientific" onclick="addToDisplay(')')">)</button>
+            <button class="scientific" onclick="addToDisplay('!')">!</button>
+            
+            <!-- Basic Operations -->
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button onclick="addToDisplay('7')">7</button>
+            <button onclick="addToDisplay('8')">8</button>
+            <button onclick="addToDisplay('9')">9</button>
+            <button class="operator" onclick="addToDisplay('/')">/</button>
+            
+            <button onclick="addToDisplay('4')">4</button>
+            <button onclick="addToDisplay('5')">5</button>
+            <button onclick="addToDisplay('6')">6</button>
+            <button class="operator" onclick="addToDisplay('*')">×</button>
+            
+            <button onclick="addToDisplay('1')">1</button>
+            <button onclick="addToDisplay('2')">2</button>
+            <button onclick="addToDisplay('3')">3</button>
+            <button class="operator" onclick="addToDisplay('-')">-</button>
+            
+            <button onclick="addToDisplay('0')">0</button>
+            <button onclick="addToDisplay('.')">.</button>
+            <button class="equals" onclick="calculate()">=</button>
+            <button class="operator" onclick="addToDisplay('+')">+</button>
+        </div>
+    </div>
+
+    <!-- Link to External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
